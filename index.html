@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>breakout</title>
-    <script src="breakout.js"></script>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EnochLam.dev</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="Images/logo.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><button><img class="logo" src="Images/logo.png" alt="logo"></button></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+            <a class="button" href="Contact.html"><button>Contact</button></a>
+        </header>
+        <h1>Enoch Lam (Groovy)</h1>
+        <div class="container">
+        <p class="typing">I am a <span class="auto-type"></span></p>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed= new Typed(".auto-type",{
+                strings : ["Christian", "Programmer", "Photographer", "Gamer"],
+                typeSpeed : 180,
+                backSpeed : 180,
+                backDelay : 2000,
+                loop : true
+            })
+        </script>
+        <div class="hero">
+            <h1>Enoch is a Programmer and a Photographer <br> based in Long Island, New York.</h1>
+            <p>He creates programs in Python and focuses on <br>wildlife and landscape photography.</p>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+            <p>Check these projects out!</p>
+            <div class="projects">
+                <a href="imagemover.html"><img id="im" src="Image Mover 32x32.svg" alt="Image Mover"></a>
+            </div>
+            <div class="projects">
+                <a href="imagemover.html"><p>Image Mover</p></a>
+            </div>
+        </div>
+        
+    </body>
+
 </html>
